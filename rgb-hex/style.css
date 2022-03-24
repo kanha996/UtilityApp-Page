@@ -67,3 +67,15 @@ a:active{
     width: max-content;
     padding-left: 550px;
 }
+#rgb-red{
+    border : 4px solid red;
+    height: 30px;
+}
+#rgb-green{
+    border : 4px solid green;
+    height: 30px;
+}
+#rgb-blue{
+    border : 4px solid rgb(48, 158, 202);
+    height: 30px;
+}
