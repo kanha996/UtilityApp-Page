@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+body{
+    color: rgb(248, 224, 187);
+    font-family: 'Fredoka', sans-serif;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-left: 100px;
+    font-size: 20px;
+}
+.nav-bar #text{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color: rgb(77, 67, 67);
+    
+}
+a:active{
+    color: aqua;
+}
+:text{
+    color: blueviolet;
+}
+#hex-text{
+    color:black;
+}
+#red-text{
+    color: red;
+}
+#green-text{
+    color: green;
+}
+#blue-text{
+    color: rgb(48, 158, 202);
+}
+
+#in-out-menu{
+    display: flex;
+
+}

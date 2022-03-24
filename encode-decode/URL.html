@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <nav id="nav-bar">
+        <div id="nav-logo">
+            <a href="/main.html"><span class="material-icons" style="font-size:50px;">
+                home
+                </span></a>
+        </div>
+        <a href="URL.html">URL Encoding/Decoding</a>
+        <a href="base64.html">BASE Encoding/Decoding</a>
+        <a href="strHashing.html">String Hashing</a>
+    </nav>
+    <section>
+        <div id="str-in">
+            <textarea id="str-area-input" placeholder="Enter your URL" rows="15"></textarea>
+            <br>
+        <div id="en-de-btn">
+            <input id="en-btn" type="button" value="Encode"/>
+            <input id="de-btn" type="button" value="Decode"/>
+        </div>
+        </div>
+        <div id="result-area-output">
+            <textarea id="str-area-output" placeholder="Result apppear here" rows="15" style="width: 332px; height: 286px;" disabled></textarea>
+        </div>
+    </section>
+    <script>
+    const strin = document.querySelector("#str-area-input");
+    const btnen = document.querySelector("#en-btn");
+    const btnde = document.querySelector("#de-btn");
+    const strout = document.querySelector("#str-area-output");
+
+    btnen.addEventListener("click", () =>{
+    strout.value = encodeURIComponent(strin.value);
+});
+
+    btnde.addEventListener("click",()=>{
+    strout.value = decodeURIComponent(strin.value);
+});
+</script>
+</body>
+</html>

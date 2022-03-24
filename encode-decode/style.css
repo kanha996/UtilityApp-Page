@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+body{
+    background-color: blanchedalmond;
+    font-family: 'Fredoka', sans-serif;
+}
+#nav-bar {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-left: 100px;
+    font-size: 20px;
+
+}
+#str-area-input{
+    vertical-align: top;
+    width: 100%;
+}
+#result-area-output{
+    display: block;
+    width: 100px;
+    padding-left: 800px;
+    padding-top: 50px;
+    width: 700%;
+    
+}
+#en-de-btn{
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+#str-in{
+    padding-left: 300px;
+}
+a {
+    text-decoration: none;
+    color: rgb(77, 67, 67);
+}
+#nav-logo{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 40px;
+    padding-right: 280px;
+}
+#str-in{
+    padding-top: 50px;
+    position: absolute;
+    box-sizing: border-box;
+    height: 100px;
+    width: 700px;
+}
+textarea{
+    padding-bottom: 50px;
+    text-align: center;
+}
+#en-btn{
+    background-color: aquamarine;
+    border: none;
+    color: rgb(14, 4, 4);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#de-btn{
+    background-color: aquamarine;
+    border: none;
+    color: rgb(14, 4, 4);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#base-en-btn{
+    background-color: aquamarine;
+    border: none;
+    color: rgb(14, 4, 4);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#base-de-btn{
+    background-color: aquamarine;
+    border: none;
+    color: rgb(14, 4, 4);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#base-area-input{
+    width: 300px;
+}
+#hashing-btn{
+    text-align: center;
+    padding-right: 150px;
+}
+#md5-btn{
+    background-color: aquamarine;
+    border: none;
+    color: rgb(14, 4, 4);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#sha-1-btn{
+    background-color: aquamarine;
+    border: none;
+    color: rgb(14, 4, 4);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#sha-256-btn{
+    background-color: aquamarine;
+    border: none;
+    color: rgb(14, 4, 4);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#sha-512-btn{
+    background-color: aquamarine;
+    border: none;
+    color: rgb(14, 4, 4);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

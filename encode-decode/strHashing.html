@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+</head>
+<body>
+    <nav id="nav-bar">
+        <div id="nav-logo">
+            <a href="/main.html"><span class="material-icons" style="font-size:50px;">
+                home
+                </span></a>
+        </div>
+        <a href="URL.html">URL Encoding/Decoding</a>
+        <a href="base64.html">BASE Encoding/Decoding</a>
+        <a href="strHashing.html">String Hashing</a>
+    </nav>
+    <section>
+        <div id="str-in">
+            <textarea id="base-area-input" placeholder="Enter your URL" rows="15"></textarea>
+            <br>
+        </div>
+        <div id="result-area-output">
+            <textarea id="base-area-output" placeholder="Result apppear here" rows="15" style="width: 352px; height: 286px;" disabled></textarea>
+        </div>
+        <div id="hashing-btn">
+            <input id="md5-btn" type="button" value="md5"/>
+            <input id="sha-1-btn" type="button" value="sha-1"/>
+            <input id="sha-256-btn" type="button" value="sha-256"/>
+            <input id="sha-512-btn" type="button" value="sha-512"/>
+        </div>
+    </section>
+    <script>
+        document.querySelector("#md5-btn").addEventListener("click",()=>{
+        document.querySelector("#base-area-output").value = CryptoJS.MD5(document.querySelector("#base-area-input").value);
+        });
+        
+        document.querySelector("#sha-1-btn").addEventListener("click",()=>{
+        document.querySelector("#base-area-output").value = CryptoJS.SHA1(document.querySelector("#base-area-input").value);
+        });
+        document.querySelector("#sha-256-btn").addEventListener("click",()=>{
+        document.querySelector("#base-area-output").value = CryptoJS.SHA256(document.querySelector("#base-area-input").value);
+        });
+        document.querySelector("#sha-512-btn").addEventListener("click",()=>{
+        document.querySelector("#base-area-output").value = CryptoJS.SHA512(document.querySelector("#base-area-input").value);
+        });
+    </script>
+</body>
+</html>
