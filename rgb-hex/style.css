@@ -28,17 +28,42 @@ a:active{
 }
 #hex-text{
     color:black;
+    font-size: 30px;
 }
 #red-text{
     color: red;
+    font-size: 30px;
 }
 #green-text{
     color: green;
+    font-size: 30px;
 }
 #blue-text{
     color: rgb(48, 158, 202);
+    font-size: 30px;
 }
 
 #in-out-menu{
     
+}
+#hex-in{
+    display: flex;
+    width: fit-content;
+    padding: 30px;
+    /* margin: 20px; */
+    font-size: 20px;
+    align-items: center;
+    top: 10px;
+    position: relative;
+    left: 400px;
+    right: 400px;
+}
+#rgb-out{
+    display: grid;
+    /* justify-content: space-evenly; */
+    gap: 10px;
+    align-items: center;
+    height: fit-content;
+    width: max-content;
+    padding-left: 550px;
 }
