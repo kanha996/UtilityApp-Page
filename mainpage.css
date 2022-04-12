@@ -75,6 +75,7 @@ aside h3{
     margin-left: 100px;
     margin-top: 50px;
     grid-template-rows: 4fr 4fr;
+    padding-bottom: 20px;
 }
 .item{
     width: fit-content;
@@ -98,4 +99,17 @@ aside h3{
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     
+}
+
+footer{
+    background-color: gainsboro;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+#footer-text{
+    font-size: 20px;
+    font-weight: bold;
 }
