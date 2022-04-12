@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+body {
+  font-family: "Fredoka", sans-serif;
+}
+main {
+  display: grid;
+  align-content: space-between;
+  gap: 38px;
+  text-align: center;
+}
+main .display-menu #text {
+  font-size: 80px;
+}
+#output-text {
+  font-size: 40px;
+  color: red;
+}
+#copy-btn {
+  background-color: white;
+  border: none;
+  border: 2px solid #4caf50;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+#copy-btn:hover{
+    background-color: #4caf50;
+    color: white;
+}
+

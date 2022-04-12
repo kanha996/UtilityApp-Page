@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>IP Address</title>
+    <link rel="stylesheet" href="ip.css" />
+  </head>
+  <body>
+    <nav id="nav-bar">
+      <div id="nav-logo">
+        <a href="/index.html"
+          ><span class="material-icons" style="font-size: 50px"> home </span></a
+        >
+      </div>
+    </nav>
+    <main>
+      <div class="display-menu">
+        <p id="text">YOUR IP ADDRESS</p>
+      </div>
+      <div class="output">
+        <div id="output-text"></div>
+      </div>
+      <div id="copy-area">
+        <button id="copy-btn">Copy to Clipboard</button>
+      </div>
+    </main>
+    <script>
+      const ipout = document.querySelector("#output-text");
+
+      function genIP() {
+        fetch("https://api.ipify.org/?format=json")
+          .then((response) => response.json())
+          .then((json) => {
+            ipout.innerText = json.ip;
+          });
+      }
+
+      genIP();
+      //Copy Button
+      const copyText = document.querySelector("#copy-btn");
+      copyText.addEventListener("click", () => {
+        // copyText.select();
+        // copyText.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(ipout.innerText);
+        copyText.innerText = "COPIED";
+      });
+    </script>
+  </body>
+</html>
