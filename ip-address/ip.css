@@ -12,6 +12,10 @@ main {
 main .display-menu #text {
   font-size: 80px;
 }
+#nav-logo{
+  display: flex;
+  justify-content: center;
+}
 #output-text {
   font-size: 40px;
   color: red;
